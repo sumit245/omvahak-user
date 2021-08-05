@@ -47,7 +47,7 @@ const LoginScreen = ({navigation}) => {
     //   formBody.push(encodedKey + '=' + encodedValue);
     // }
     // formBody = formBody.join('&');
-    fetch('http://192.168.1.4:5000/api/users/login', {
+    fetch('https://omvahak-temp.herokuapp.com/api/users/login', {
       method: 'POST',
       body: dataToSend,
       headers: {
@@ -152,6 +152,7 @@ const LoginScreen = ({navigation}) => {
                 Show Password
               </Text>
             </View>
+
             <Text style={styles.errorTextStyle}>Forgot Password?</Text>
             <TouchableOpacity
               style={styles.buttonStyle}
